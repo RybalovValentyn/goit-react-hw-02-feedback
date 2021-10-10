@@ -1,15 +1,25 @@
+import React, {Component} from "react";
+import Section from "./ssection/Section";
+import Feedback from './Feedback/Feedback'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-           <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+class App extends Component {
 
-      </header>
-    </div>
-  );
+
+render(){ return (
+  <>
+    <Section sectionName='Please leave feedback' component = {this.state} >
+  <Feedback />
+  </Section>
+
+
+    <Section sectionName='Statistics' />
+
+  </>
+    )
+
+}
+
+
 }
 
 export default App;
