@@ -13,12 +13,9 @@ class FeedbackApp extends Component {
           onIncrement = (event) => {              
               const {name} = event.currentTarget ;
               this.setState(prevState => ({ [name]: prevState[name] + 1})); 
-            //   this.countTotalFeedback(this.state)
+              console.log(event);
                         }
 
-onStatisticRender =() => {
-    console.log('state',this.state)
-}
 
 // countTotalFeedback=({good, neutral, bad}) => {
 //     console.log({good, neutral, bad});

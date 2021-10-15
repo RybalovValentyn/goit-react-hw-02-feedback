@@ -5,7 +5,7 @@ li {
 .buttonList {
   display: flex;
 }
-.buttonList button {
+.buttonitem {
   width: 80px;
   padding: 10px;
   font-size: 16px;
